@@ -143,7 +143,7 @@ def update_output_container(selected_statistics, input_year):
             figure=px.line(monthly_sales,
                            x='Month',
                            y='Automobile_Sales',
-                           title=f"Monthly Sales in {input_year}")
+                           title="Monthly Sales in {input_year}")
         )
 
         # Plot 3: Average Vehicles Sold by Vehicle Type
@@ -152,7 +152,7 @@ def update_output_container(selected_statistics, input_year):
             figure=px.bar(avr_vdata,
                           x='Vehicle_Type',
                           y='Automobile_Sales',
-                          title=f"Average Vehicles Sold by Type in {input_year}")
+                          title="Average Vehicles Sold by Type in {input_year}")
         )
 
         # Plot 4: Advertising Expenditure for Vehicle Types
@@ -161,7 +161,7 @@ def update_output_container(selected_statistics, input_year):
             figure=px.pie(exp_data,
                           values='Advertising_Expenditure',
                           names='Vehicle_Type',
-                          title=f"Advertising Expenditure by Vehicle Type in {input_year}")
+                          title="Advertising Expenditure by Vehicle Type in {input_year}")
         )
 
         return [
